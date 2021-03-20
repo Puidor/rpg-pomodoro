@@ -5,27 +5,46 @@
 
 .experienceBar span {
   font-size: 1rem;
+
+  border: 0.5px solid var(--gray-line);
+  border-bottom-color: var(--green);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .experienceBar > div {
   flex: 1;
-  height: 4px;
-  border-radius: 4px;
+  height: 10px;
+  border-radius: 3px;
   background: var(--gray-line);
   margin: 0 1.5rem;
   position: relative;
 }
 
 .experienceBar > div > div {
-  height: 4px;
-  border-radius: 4px;
+  height: 10px;
+  border-radius: 3px;
   background: var(--green);
 }
 
 span.currentExperience {
   position: absolute;
-  top: 12px;
+  top: 20px;
 
+  border-bottom: 0.5px solid var(--green);
+  border-radius: 5px;
+  padding: 5px;
+
+  width: 65px;
   transform: translateX(-50%);
-  width: 52px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.currentExperience img {
+  width: 100%;
+  height: 20px;
+  margin-top: -17px;
 }
